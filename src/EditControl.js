@@ -53,7 +53,7 @@ function EditControl(props) {
     map.addControl(drawRef.current);
     onMounted && onMounted(drawRef.current);
 
-    return () => {
+    return () => {w
       map.off(leaflet.Draw.Event.CREATED, onDrawCreate);
 
       for (const key in eventHandlers) {
@@ -66,8 +66,8 @@ function EditControl(props) {
 
   React.useEffect(() => {
     if (
-      isEqual(props.draw, propsRef.current.draw) &&
-      isEqual(props.edit, propsRef.current.edit) &&
+      isEqual(props.draw, drawRef.current.draw) &&
+      isEqual(props.edit, drawRef.current.edit) &&
       props.position === propsRef.current.position
     ) {
       return false;
