@@ -1,6 +1,6 @@
 {
   "name": "gnunes-react-leaflet-draw",
-  "version": "0.19.9",
+  "version": "0.19.10",
   "description": "Fork from react-leaflet-draw",
   "main": "dist/gnunes-react-leaflet-draw.js",
   "module": "dist/esm/index.js",
